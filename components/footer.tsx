@@ -4,8 +4,7 @@ import { Mail, MessageCircle, Phone } from "lucide-react"
 import { SUPPORT_PHONE_DISPLAY, SUPPORT_WHATSAPP_URL } from "@/lib/links"
 
 const EMAIL_CONTATO = "[EMAIL_CONTATO]"
-const LINK_TERMOS = ""
-const LINK_PRIVACIDADE = ""
+const LINK_PRIVACIDADE = "/privacidade"
 
 export function Footer() {
   return (
@@ -53,15 +52,8 @@ export function Footer() {
               </Link>
             )}
             
-            {LINK_TERMOS && LINK_PRIVACIDADE && (
+            {LINK_PRIVACIDADE && (
               <div className="flex items-center gap-4 text-sm mt-2">
-                <Link
-                  href={LINK_TERMOS}
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                >
-                  Termos de Uso
-                </Link>
-                <span className="text-primary-foreground/40">|</span>
                 <Link
                   href={LINK_PRIVACIDADE}
                   className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
